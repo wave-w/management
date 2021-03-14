@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    outline: none;
+}
+body,html{
+    height: 100%;
+    width: 100%;
+}
+button{
+    border: none;
+    cursor: pointer;
+}
+
+/* 谷歌 */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+   -webkit-appearance: none;
+   appearance: none;
+   margin: 0;
+}
+/* 火狐 */
+input[type="number"]{
+   -moz-appearance:textfield;
+}
