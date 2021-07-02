@@ -2,7 +2,6 @@ import axios from 'axios'
 
 export function request(config){
     const intance = axios.create({
-        // baseURL: 'http://111.75.252.147/score',
         baseURL: 'https://cxcy.gmu.cn/score_back',
         withCredentials :true,
         timeout: 10000

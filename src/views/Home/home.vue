@@ -324,12 +324,6 @@
         this.showclassicon = false
       },
       getposition(position) {
-        //  console.log(position);
-        //  if (this.confirmposition == 'teacher') {
-
-        //         } else if (this.confirmposition == 'student') {
-
-        //         }
         if (this.confirmposition == 'teacher') {
           this.positionvalue = position.message
           this.getteacher()
@@ -500,9 +494,7 @@
         }
       },
     sendfile(url,file){
-      // console.log(url,file);
       this.showimport = false
-      // console.log('aaaa');
        let config = {
             headers: {
               'Content-Type': 'multipart/form-data'
@@ -510,7 +502,6 @@
             withCredentials: true,
           }
           axios.post(url, file, config).then(res => {
-            // console.log(res);
             if (res.data.code === 200) {
               this.showmess = true
               this.classname = 'passright'
@@ -545,7 +536,6 @@
     height: 160px;
     background: url('../../assets/images/pic2.jpg') no-repeat;
     background-size: 100% 160px;
-    /* opacity:0.8; */
   }
 
   .gmu {
